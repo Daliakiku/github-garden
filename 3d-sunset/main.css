@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #36a9d6;
+}
+
+
+#sun{
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    background-color: #ffd000;
+    border-radius: 50%;
+}
+
+#path{
+    fill:#36a9d6;
+}
+
+#ground{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #57ef82;
+}
+
