@@ -58,19 +58,25 @@ const sizes = { //creating an object to store sizes
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); //fov, aspect ratio
 //add camera to the scene
 scene.add(camera);
-//camera.position.z = 6; //move the camera away from the cube
 
-//zoom in button
-document.querySelector('.zoom-in').addEventListener('click', () => {
-    camera.position.z -= 5;
-    console.log(camera.position.z);
-});
+var rotateAmount = Math.PI * 4;
+var currentRotation = 0;
 
-
-//zoom out button
-document.querySelector('.zoom-out').addEventListener('click', () => {
-    camera.position.z += 5;
-    console.log(camera.position.z);
+function rotate(){
+    if(currentRotation >= rotateAmount){
+        return;
+        currentRotation = 0; //?????
+        group.rotation.y = 0;
+    } else {
+        group.rotation.y += 0.1;
+        currentRotation += 0.1;
+        requestAnimationFrame(rotate);
+    }
+    
+}
+//rotate button
+document.querySelector('.rotate').addEventListener('click', () => {
+    rotate();
 });
 
 
@@ -80,5 +86,9 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(sizes.width, sizes.height);
 
-//create render
-renderer.render(scene, camera);
+//animate
+function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+}
+animate();
