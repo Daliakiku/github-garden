@@ -64,9 +64,9 @@ var currentRotation = 0;
 
 function rotate(){
     if(currentRotation >= rotateAmount){
-        return;
         currentRotation = 0; //?????
         group.rotation.y = 0;
+        return;
     } else {
         group.rotation.y += 0.1;
         currentRotation += 0.1;

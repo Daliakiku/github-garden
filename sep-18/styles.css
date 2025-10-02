@@ -1,0 +1,8 @@
+#canvas {
+    background-color: #ffacac;
+    width: 800px; /* Set a width */
+    height: 600px; /* Set a height */
+    display: block; /* Ensure it behaves like a block element */
+    margin: 0 auto; /* Center it horizontally */
+}
+

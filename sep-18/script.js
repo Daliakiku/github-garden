@@ -4,7 +4,7 @@ import * as THREE from 'three';
 
 
 //canvas
-const canvas = document.querySelector('canvas.canvas');
+const canvas = document.querySelector('.canvas');
 console.log(canvas);
 
 
@@ -60,18 +60,24 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); //fo
 scene.add(camera);
 //camera.position.z = 6; //move the camera away from the cube
 
+
 //zoom in button
 document.querySelector('.zoom-in').addEventListener('click', () => {
-    camera.position.z -= 5;
+    camera.position.z -= 3;
     console.log(camera.position.z);
+    renderer.render(scene, camera); // Re-render the scene
+
 });
 
 
 //zoom out button
 document.querySelector('.zoom-out').addEventListener('click', () => {
-    camera.position.z += 5;
+    camera.position.z += 3;
     console.log(camera.position.z);
+    renderer.render(scene, camera); // Re-render the scene
+
 });
+
 
 
 //renderer
@@ -79,6 +85,8 @@ const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 });
 renderer.setSize(sizes.width, sizes.height);
+renderer.setPixelRatio(window.devicePixelRatio); // Ensure high DPI rendering
 
 //create render
 renderer.render(scene, camera);
+
