@@ -1,0 +1,104 @@
+body{
+    width: 1440px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    background-color: #868686;
+    z-index: -1;
+    overflow: hidden;
+}
+
+html{
+    background-color: #FFFFFF;
+}
+
+#title h1{
+    position: absolute;
+    width: 100%;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1, 1.2); 
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 175px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+#title h1 .font-2 {
+    font-family: "Amiri";
+    font-weight: 500;
+    font-size: 175px;
+    transform: scale(1, 1.2);
+    font-style: italic;
+}
+
+#black-box{
+    background-color: #000000;
+    width: 100%;
+    height: 80%;
+}
+
+#black-box p{
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#black-box p #about{
+    position: absolute;
+    left: 1%;
+
+}
+
+#black-box p #group-2{
+    word-spacing: 7px;
+
+}
+
+#black-box p #group-3{
+    position: absolute;
+    right: 1%;
+}
+
+#black-box h2 {
+    position: absolute; /* Change to relative or remove */
+    bottom: 23%; /* Reset the bottom positioning */
+    width: 100%; /* Ensure it spans the full width of the container */
+    color: #FFFFFF;
+    text-align: center; /* Center the text horizontally */
+    font-family: "montserrat";
+    font-weight: 450;
+    letter-spacing: -3px;
+    font-size: 50px;
+    margin: 0 auto; /* Center the element itself */
+}
+
+#black-box h2 #subtitle-2 {
+    font-family: "Amiri";
+    font-style: italic;
+    letter-spacing: normal;
+}
+
+footer p{
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
