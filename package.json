@@ -2,5 +2,24 @@
   "dependencies": {
     "three": "^0.180.0",
     "vite": "^7.1.8"
-  }
+  },
+  "name": "github-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daliakiku/github-garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daliakiku/github-garden/issues"
+  },
+  "homepage": "https://github.com/Daliakiku/github-garden#readme"
 }
