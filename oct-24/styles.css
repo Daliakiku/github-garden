@@ -1,0 +1,365 @@
+html{
+    background-color: #ffffff;
+}
+
+body{
+    width: 1440px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#imgcont-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 470px;
+    height: 280px;
+}
+
+#img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#imgcont-1 p{
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    color: #ffffff;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+#imgcont-2{
+    position: absolute;
+    top: 70px;
+    left: 490px;
+    padding: 20px;
+    width: 440px;
+    height: 425px;
+}
+
+#img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#bar{
+    width: 440px;
+    height: 50px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 490px;
+    margin: 20px;
+    color: #dfdfdf;
+
+}
+
+#bar #ugly-ass-logo{
+    position: absolute;
+    font-family: "Noto sans";
+    top: -23px;
+    left: 25px;
+    font-size: 40px;
+}
+
+#bar h2{
+    position: absolute;
+    font-family: "Noto sans";
+    top: -10px;
+    left: 65px;
+    font-size: 25px;
+}
+
+#bar #view{
+    position: absolute;
+    left: 200px;
+    color: #a7a7a7;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    gap: 90px;
+}
+
+#bar #overview{
+    position: absolute;
+    left: 350px;
+}
+
+#box{
+    position: relative;
+    top: 0;
+    left: 945px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 460px;
+    height: 390px;
+    border-radius: 20px;
+    background-color: rgb(212, 202, 202);
+    display: inline-block;
+}
+
+#box #title{
+    background-color: #f8f2f2;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#box h1{
+    font-weight: 500;
+    font-size: 40;
+    line-height: 30px;
+}
+
+#box #footer{
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    color:#616161;
+    left: -7px;
+    word-spacing: 15px;
+}
+
+#box #footer #bold{
+    font-weight: 600;
+    color: #000000;
+    word-spacing: normal;
+}
+
+#box4{
+    position: relative;
+    top: -130px;
+    left: -5px;
+    padding: 20px;
+    width: 470px;
+    height: 415px;
+}
+
+#box4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#box5{
+    position: absolute;
+    top: 510px;
+    left: 490px;
+    padding: 20px;
+    width: 440px;
+    height: 200px;
+}
+
+#box5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#arrows {
+    position: absolute; /* Position arrows relative to #box4 */
+    top: 50px; /* Place arrows at the bottom of the box */
+    right: 0px; /* Center the arrows horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    display: flex; /* Align arrows horizontally */
+    justify-content: space-between; /* Space arrows evenly */
+    align-items: center; /* Center arrows vertically */
+    gap: 15px;
+}
+
+.arrow {
+    width: 40px; /* Circle width */
+    height: 40px; /* Circle height */
+    background-color: #000000; /* White circle */
+    border-radius: 50%; /* Make it a circle */
+    display: flex; /* Center the arrow inside the circle */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+}
+
+.arrow::before {
+    content: ''; /* Create the arrow */
+    display: block;
+    width: 10px; /* Arrow width */
+    height: 10px; /* Arrow height */
+    border: solid #ffffff; /* Arrow color */
+    border-width: 0 2px 2px 0; /* Create the arrow shape */
+    transform: rotate(45deg); /* Default: Right arrow */
+}
+
+.arrow.left::before {
+    transform: rotate(130deg); /* Rotate to point left */
+}
+
+.arrow.right::before {
+    transform: rotate(315deg); /* Rotate to point right */
+}
+
+#box4 #footer{
+    position: absolute;
+    bottom: 30px;
+    font-size: 17px;
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+    color:#3a3a3a;
+    left: -40px;
+    }
+
+#arrow{
+    color:rgb(214, 89, 31)
+}
+
+#box4 #text{
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+    color:#000000;
+    left: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.small-text{
+    font-size: 10px;
+    color: #4a4a4a;
+    line-height: 0;
+}
+
+.big-text{
+    font-size: 25px;
+    color: #000000;
+    line-height: 1;
+}
+
+#box5 h2{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    text-align: center;
+    left: -10px;
+    font-weight: 800;
+    width: 100%;
+    white-space: nowrap;
+    color:#ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#box5 h1{
+    position: absolute;
+    top: 90px;
+    font-size: 25px;
+    text-align: center;
+    left: -10px;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    color:#ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#box5 p{
+    position: absolute;
+    top: 130px;
+    font-size: 17px;
+    width: 350px;
+    text-align: center;
+    left: 60px;
+    display: flex;
+    font-weight: 100;
+    color:#ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#box6 {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    width: 460px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#box6 #img-cont {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 460px;
+    height: 250px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center; /* Align items to the top */
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the image and text */
+    width: 23%; /* Adjust width to fit all images in the container */
+    height: 80%;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.img-wrapper p {
+    margin-top: 5px; /* Add spacing between the image and text */
+    font-size: 12px; /* Adjust font size for the text */
+    color: #4a4a4a; /* Set text color */
+    text-align: center; /* Center align the text */
+}
+
+button{
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+    right: 180px;
+    width: 120px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    color: #202020;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #202020;
+}
