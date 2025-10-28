@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./TestMaelstromSans-Bold.otf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure both html and body cover the full viewport */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and borders in dimensions */
+    background-color: #000000; /* Fallback background color */
+}
+
+body {
+    overflow: hidden;
+    background-image: url(./portugal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Hamburger Icon */
+.hamburger {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 33px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 10px;
+    z-index: 1000;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+/* Side Navigation Menu */
+#sidenav {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    background-color: #111;
+    border-right: 5px solid red;
+}
+
+#redline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12%;
+    width: 2px;
+    background-color: red;
+}
+
+#whiteline1{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 0.5px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#whiteline2{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 60px;
+    height: 0.5px;
+    background-color: #ffffff;
+}
+
+#whiteline3{
+    position: absolute;
+    bottom: 110px;
+    left: 20px;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+#title{
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'MyFont', sans-serif;
+    font-size: 260px;
+    letter-spacing: 20px;
+    color: #ff0000;
+}
+
+.sidetext {
+    position: absolute;
+    font-family: "Monserrat", sans-serif;
+    left: 25px;
+    font-size: 7px;
+    font-weight: 50px;
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(360deg);
+    margin: 0;
+    top: 115px;
+    letter-spacing: 1px;
+}
+
+#text1{
+    top: 570px;
+}
+
+#side-title{
+    font-family: "MyFont", sans-serif;
+    top: 330px;
+    font-weight: 700;
+    font-size: 15px;
+    left: 20px
+}
+
+#svg-ams-cross {
+    width: 20px; 
+    height: 60px; 
+    position: absolute;
+    left: 20px; 
+    bottom: 30px; 
+}
+
+#body-text{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 80px;
+    font-size: 25px;
+    left: 85px;
+    color: #ffffff;
+    transform: scale(0.8, 1.4);
+    line-height: 25px;
+    font-weight: 900px;
+    word-spacing: -1px;
+}
+
+#small-body-text{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-family: "Monserrat", sans-serif;
+    bottom: 30px;
+    font-size: 7px;
+    left: 130px;
+    color: #ffffff;
+    line-height: 12px;
+    font-weight: 900px;
+    word-spacing: -1px;
+    letter-spacing: 1px;
+}
+
+#red-circle{
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+    width: 150px;
+    height: 150px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+#red-circle path{
+    transform-origin: center;
+    transform: scale(0.1);
+    transform: translate(-13px, -10px);
+}
