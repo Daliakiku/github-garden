@@ -59,53 +59,8 @@ header{
     object-fit: cover;
     filter: grayscale(100%);
     border:#000000 solid 1px;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scaling */
-    opacity: 1;
-}
-
-#img-cont img {
-    width: 95px;
-    height: 130px;
-    object-fit: cover;
-    filter: grayscale(100%);
-    border: #000000 solid 1px;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scaling */
-    opacity: 1; /* Default opacity for all images */
-}
-
-#img-cont img {
-    width: 95px;
-    height: 130px;
-    object-fit: cover;
-    filter: grayscale(100%);
-    border: #000000 solid 1px;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scaling */
-    opacity: 1; /* Default opacity for all images */
-}
-
-/* Dim all images except the hovered one */
-#img-cont:hover img:not(:hover) {
-    opacity: 0.5; /* Dim non-hovered images */
-}
-
-/* Keep the hovered image fully visible */
-#img-cont img:hover {
-    opacity: 1;
-    transform: scale(1.2); /* Optional scaling effect */
-    filter: none; /* Remove grayscale filter for the hovered image */
-    cursor: pointer;
-}
-
-#img-cont img:not(:hover) {
-    opacity: 1; /* Ensure all images are fully visible when no image is hovered */
-}
-
-/* Keep the hovered image fully visible */
-#img-cont img:hover {
-    opacity: 1;
-    transform: scale(1.2); /* Optional scaling effect */
-    filter: none; /* Remove grayscale filter for the hovered image */
-    cursor: pointer;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    transition: scale 0.3s ease;
 }
 
 #img1{
@@ -136,8 +91,21 @@ header{
     position: absolute;
     top: 247px;
     left: 613px;
-    transition: all 0.3s ease-in-out;  
+    transition: all 0.3s ease-in-out; /* why doesn't this work T_T */
 
+}
+
+
+#img5:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    filter: none;
+    opacity: 1; /* Keep #img5 fully visible */
+}
+
+#img5:hover ~ img {
+    opacity: 0.5; /* Dim all other images */
 }
 
 #img6{
@@ -150,8 +118,7 @@ header{
     position: absolute;
     top: 247px;
     right: 140px;
-} 
-
+}
 
 #title{
     position: absolute;
@@ -179,31 +146,15 @@ header{
     left: 30px;
 }
 
-#subtitle-container {
-    display: inline-block; 
-    position: absolute; 
-    top: 30px; 
-    left: 480px; 
-    padding: 0;
-    margin: 0; 
-    white-space: nowrap; 
-    opacity: 0; /* Make it invisible */
-    transition: opacity 0.3s ease; /* Smooth fade-in effect */
-}
-
-/* Show the subtitle when any image is hovered */
-#img-cont img:hover ~ #subtitle-container {
-    opacity: 1; /* Make it visible */
-}
-
 #subtitle{
     position: absolute;
+    top: 30px;
+    left: 480px;
     font-size: 20px;
     font-weight: 900;
     letter-spacing: -0.5px;
     white-space: nowrap;
 }
-
 
 #small-text{
     position: absolute;
@@ -216,12 +167,6 @@ header{
     display: flex;
     width: 470px;
     justify-content: space-between;
-    opacity: 0;
-}
-
-#img-cont img:hover ~ #small-text {
-    opacity: 1; /* Make it visible */
-    transition: opacity 0.3s ease;
 }
 
 #footer{
@@ -244,4 +189,3 @@ header{
     text-align: center;
     line-height: 1;
 }
-
