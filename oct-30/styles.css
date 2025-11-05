@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+    overflow: hidden;
+}
+
+body{
+    width: 1440px;
+    height: 750px;
+    position: relative;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#menu{
+    width: fit-content;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 530;
+    gap: 27px;
+    border:#e6e6e6 1px solid;
+    border-radius: 20px;
+    top: 20px;
+    left: 40px;
+    position: absolute;
+
+}
+
+#bg-img{
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    background-color: transparent;
+}
+
+.star{
+    position: absolute;
+    background-color: transparent;
+    height: auto;
+}
+
+#star1{
+    width: 800px;
+    top: 100px;
+    left: -340px;
+    filter: blur(4px);
+}
+
+#star2{
+    width: 800px;
+    bottom: -220px;
+    left: -180px;
+    filter: blur(2px);
+    rotate: 20deg;
+}
+
+#star3{
+    width: 500px;
+    top: 400px;
+    left: 180px;
+    rotate: -25deg;
+}
+
+#star4{
+    width: 500px;
+    top: 310px;
+    right: 180px;
+}
+
+#star5{
+    width: 850px;
+    bottom: -20px;
+    right: -300px;
+    filter: blur(4px);
+}
+
+#star6{
+    width: 500px;
+    bottom: -90px;
+    right: 0px;
+    filter: blur(2px);
+    rotate: 15deg;
+}
+
