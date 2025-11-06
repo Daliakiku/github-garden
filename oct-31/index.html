@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oct 30</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id = "logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+            <!-- Define the mask -->
+            <mask id="cutout-mask">
+                <!-- Full white circle (visible area) -->
+                <rect width="100" height="100" fill="white" />
+                <!-- X shape (transparent area) -->
+                <path d="M35 35 L65 65 M65 35 L35 65" stroke="black" stroke-width="10" stroke-linecap="round" />
+            </mask>
+        
+            <!-- Circle with the mask applied -->
+            <circle cx="50" cy="50" r="45" fill="white" mask="url(#cutout-mask)" />
+        </svg>
+        <p>klook</p>
+    </div>
+
+    <img id = "ticket" src="ticket.png" alt="ticket">
+
+    <h1 id = "title">First up, set your Out of Office <br> message.</h1>
+
+    <div id = "card-container">
+        <div class = "card" id = "card1">
+            <img id = "card1-img" src="img1.jpg" alt="card1">
+            <p>A pretty girl</p>
+        </div>
+
+        <div class = "card" id = "card2">
+            <img id = "card2-img" src="img2.jpg" alt="card2">
+            <p>A pretty girl</p>
+        </div>
+
+        <div class = "card" id = "card3">
+            <img id = "card3-img" src="img3.jpg" alt="card3">
+            <p>A pretty girl</p>
+        </div>
+    </div>
+
+    <div id = "footer">
+        <p> Privacy Policy </p>
+        <p> Terms & Conditions </p>
+    </div>
+
+    <div id = "top-right-text">
+        <p>English</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="white">
+            <path d="M12 16L6 10h12L12 16z" />
+        </svg>
+        <div id = "arrow-cont-top"> 
+            <div id = "purple">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="15" height="15" fill="white">
+                    <path d="M10 10 L90 10 L10 90 Z" transform="rotate(90, 50, 50)" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id = "bottom-button">
+        <p>Next</p>
+        <div id = "arrow-cont">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="white">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        </div>
+    </div>
+    
+    <script src = "main.js"></script>
+</body>
+</html>

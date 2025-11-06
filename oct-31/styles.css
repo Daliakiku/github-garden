@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #000000;
+}
+
+body{
+    width: 1440px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+    background-image: url('./gradient-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 120px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+#logo p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    align-self: center;
+}
+
+#title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#ticket{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer{
+    position: absolute;
+    bottom: 29px;
+    left: 8%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+    text-decoration: underline;
+}
+
+#footer p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(20, 9, 59);
+}
+
+.card{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    height: 410px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: linear-gradient(135deg, #ffffff, #dedede); /* Gradient background */
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    background-color: #FF5733;
+    width: 100%;
+    height: 88%;
+    border-radius: 10px;
+    position: relative;
+    top: 0px;
+    object-fit: cover;
+}
+
+.card p{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+#card1 {
+    top: 54%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%); 
+    box-shadow: 
+        inset 0 0 8px rgba(0, 0, 0, 0.2), /* Inner shadow */
+        0 0 20px 5px rgba(255, 255, 255, 0.5); /* Outer glow */
+    transition: transform 0.3s ease;
+}
+
+#card2 {
+    top: 53%;
+    left: 61%;
+    transform: translate(-50%, -50%) scale(0.7) rotate(15deg); 
+    box-shadow: inset 0 0px 8px rgba(0, 0, 0, 0.2); /* Inner shadow */
+    transition: transform 0.3s ease;
+}
+
+#card3 {
+    top: 53%;
+    left: 39%;
+    transform: translate(-50%, -50%) scale(0.7) rotate(-15deg); 
+    box-shadow: inset 0 0px 8px rgba(0, 0, 0, 0.2); /* Inner shadow */
+    transition: transform 0.3s ease;
+
+}
+
+#card1:hover{
+    transform: translate(-50%, -50%) scale(1.1); /* Expand the card */
+    transition: transform 0.3s ease;
+}
+
+#card1:hover ~ #card2 {
+    transform: translate(-50%, -50%) scale(0.7) rotate(15deg) translateX(20px); /* Move #card2 to the right */
+    transition: transform 0.3s ease;
+}
+
+#card1:hover ~ #card3 {
+    transform: translate(-50%, -50%) scale(0.7) rotate(-15deg) translateX(-20px); /* Move #card3 to the left */
+    transition: transform 0.3s ease;
+}
+
+#top-right-text{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+#top-right-text svg{
+    position: relative;
+}
+
+#arrow-cont-top{
+    position: relative;
+    color:rgb(20, 9, 59);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 35px;
+    width: 50px;
+    box-shadow: 
+        inset 3px 3px 5px rgba(255, 255, 255, 0.4),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#purple{
+    background-color: rgb(213, 78, 213);
+    padding: 6px 15px;
+    border-radius: 30px;
+    box-shadow: 
+        inset 3px 3px 5px rgba(255, 255, 255, 0.4),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#purple svg{
+    position: relative;
+    top: 1px;
+    left: -2px;
+}
+
+#bottom-button{
+    position: absolute;
+    bottom: 45px;
+    right: 50%;
+    width: 110px;
+    transform: translate(50%, -50%);
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #080808;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 5px;
+    box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.4);
+}
+
+#bottom-button p{
+    position: relative;
+    left: 5px;
+}
+
+#arrow-cont{
+    position: relative;
+    color:rgb(20, 9, 59);
+    background-color: rgb(41, 148, 181);
+    border-radius: 30px;
+    height: 35px;
+    width: 50px;
+    box-shadow: 
+        inset 3px 3px 5px rgba(255, 255, 255, 0.4),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
