@@ -98,6 +98,21 @@ body{
     display: flex;
 }
 
+#menu #orange{
+    background-color: #FF5733;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    right: 8px;
+    border-radius: 50px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#menu:hover #orange{
+    opacity: 1;
+}
+
 .paren{
     color:#6e6e6e;
 }
@@ -126,7 +141,7 @@ body{
 }
 
 #circle:hover{
-    background-color: rgb(33, 29, 81);
+    background-color: #232323;
     cursor: pointer;
 }
 
@@ -139,6 +154,11 @@ video{
     border-radius: 5px;
 }
 
+#vid-cont:hover p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 #vid-cont p{
     position: absolute;
     top: 200px;
@@ -146,6 +166,8 @@ video{
     font-family: 'Noto Sans', sans-serif;
     font-size: 11px;
     color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 #paren1{
@@ -248,6 +270,7 @@ video{
     border-radius: 2px;
     color:#232323;
     display: flex;
+    transition: background-color 0.3s ease;
 }
 
 #footer #circle{
@@ -259,6 +282,38 @@ video{
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
     transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+    transition: color 0.3s ease;
+}
+
+#footer #circle2{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    right: -10px;
+    top: 6px;
+    z-index: 2;
+    border-radius: 50px;
+    background-color:  #FF5733;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+#footer:hover{
+    background-color: #232323;
+    cursor: pointer;
+    color:rgb(244, 240, 235);
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+#footer:hover #circle2{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#footer:hover #circle{
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 #subtitle{
@@ -293,6 +348,23 @@ video{
     right: 100px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+#bottom-right-text:hover #arrow-down-cont{
+    background-color: #232323;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#bottom-right-text p{
+    transition: transform 0.3s ease;
+}
+
+
+#bottom-right-text:hover p{
+    transform: translate(0, -10px);
+    transition: transform 0.3s ease;
 }
 
 #arrow-down-cont{
@@ -303,6 +375,7 @@ video{
     right: -5px;
     bottom: 130px;
     border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
 #arrow-down-cont svg{
@@ -310,5 +383,11 @@ video{
     top: -11px;
     left: 13px;
     transform: rotate(180deg);
-    color:#FF5733;
+    stroke:#FF5733;
+    transition: stroke 0.3s ease;
+}
+
+#bottom-right-text:hover #arrow-down-cont svg{
+    stroke:rgb(244, 240, 235);
+    transition: stroke 0.3s ease;
 }
