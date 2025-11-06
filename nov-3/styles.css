@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Gothic';
+    src: url('./Gothic\ CG\ No2\ Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    width: 1440px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 240, 235);
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#title{
+    position: absolute;
+    top: 420px;
+    width: 100%;
+    left: 643px;
+    transform: translate(-50%, -50%);
+    font-family: 'Gothic', sans-serif;
+    font-size: 210px;
+    font-weight: normal;
+    color: #232323;
+    text-align: center;
+    word-spacing: 240px;
+    letter-spacing: -10px;
+}
+
+#p2{
+    position: relative;
+    top: -36px;
+    left: 205px;
+}
+
+#p3{
+    position: relative;
+    top: -63px;
+    left: 43px;
+}
+
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    width: 200px;
+    height: auto;
+    font-family: 'Gothic';
+    font-size: 29px;
+    letter-spacing: -1.5px;
+}
+
+#guy{
+    position: absolute;
+    top: 105px;
+    right: 400px;
+    width: 140px;
+    height: auto;
+}
+
+#header{
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, 0);
+    letter-spacing: 190px;
+    font-weight: 600;
+}
+
+#menu{
+    position: absolute;
+    top: 20px;
+    right: 86px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, 0);
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+}
+
+.paren{
+    color:#6e6e6e;
+}
+
+#menu svg{
+    position: relative;
+    top: -4px;
+    left: -10px;
+}
+
+#circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, 0);
+    right: -65px;
+    border-radius: 50px;
+    background-color: rgb(245, 95, 19);
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+#circle svg{
+    position: relative;
+    transform: translate(40%, 65%);
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+#circle:hover{
+    background-color: rgb(33, 29, 81);
+    cursor: pointer;
+}
+
+video{
+    position: absolute;
+    top: 115px;
+    left: 335px;
+    width: 310px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#vid-cont p{
+    position: absolute;
+    top: 200px;
+    left: 470px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+}
+
+#paren1{
+    position: absolute;
+    bottom: 5px;
+    left: 360px;
+    transform: translate(-50%, -50%);
+    font-family: 'Gothic', sans-serif;
+    font-size: 170px;
+    font-weight: normal;
+    color: #232323;
+    text-align: center;
+    word-spacing: 240px;
+    letter-spacing: 240px;
+}
+
+#img-cont img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#img-cont #img1{
+    position: absolute;
+    left: 110px;
+    bottom: 65px;
+    width: 180px;
+    transform: rotate(4deg);
+}
+
+#img-cont #img2{
+    position: absolute;
+    left: 200px;
+    width: 200px;
+    height: 280px;
+    bottom: 40px;
+    object-fit: cover;
+    z-index: 3;
+    left: 155px;
+    transform: rotate(-7deg);
+}
+
+
+#img-cont #img3{
+    position: absolute;
+    left: 150px;
+    width: 190px;
+    height: 230px;
+    z-index: 4;
+    object-fit: cover;
+    bottom: 70px;
+    transform: rotate(2deg);
+}
+
+
+#img-cont #img4{
+    position: absolute;
+    left: 140px;
+    bottom: 60px;
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    z-index: 5;
+    transform: rotate(-3deg);
+}
+
+#img-cont #img-space{
+    width: 190px; /* Set the width */
+    height: 280px; /* Set the height */
+    background-color: #FF5733; /* Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    position: absolute; /* Optional: Position it on the page */
+    bottom: 40px; /* Adjust the position */
+    left: 160px; /* Adjust the position */
+    z-index: 2;
+}
+
+#img-cont p{
+    position: absolute;
+    bottom: 190px;
+    left: 180px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    z-index: 6;
+}
+
+#footer{
+    background-color: #FF5733;
+    position: absolute;
+    bottom: 23px;
+    left: 565px;
+    padding: 17px 27px;
+    font-weight: 550;
+    font-size: 14px;
+    border-radius: 2px;
+    color:#232323;
+    display: flex;
+}
+
+#footer #circle{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    right: 8px;
+    top: 6px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+#subtitle{
+    position: absolute;
+    bottom: 110px;
+    width: 100%;
+    left: 1690px;
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #232323;
+    line-height: 27px;
+    word-spacing: -1px;
+    letter-spacing: -0.5px;
+}
+
+#subtitle #orange{
+    color: #FF5733;
+}
+
+#bottom-right-text {
+    writing-mode: vertical-rl; /* Text flows vertically, right-to-left */
+    transform: rotate(180deg); /* Rotate to have the text read from bottom to top */
+    text-orientation: mixed; /* Ensures proper orientation of characters */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #232323;
+    position: absolute;
+    bottom: 87px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#arrow-down-cont{
+    border:rgb(245, 95, 19) 1.2px solid;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -5px;
+    bottom: 130px;
+    border-radius: 50px;
+}
+
+#arrow-down-cont svg{
+    position: relative;
+    top: -11px;
+    left: 13px;
+    transform: rotate(180deg);
+    color:#FF5733;
+}
