@@ -170,6 +170,15 @@ video{
     transition: opacity 0.3s ease;
 }
 
+#vid-cont svg{
+    position: absolute;
+    top: 130px;
+    left: 370px;
+    width: 90px;
+    height: auto;
+    fill: #FF5733;
+}
+
 #paren1{
     position: absolute;
     bottom: 5px;
@@ -191,6 +200,7 @@ video{
     width: 300px;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.6s ease;
 }
 
 #img-cont #img1{
@@ -246,6 +256,7 @@ video{
     bottom: 40px; /* Adjust the position */
     left: 160px; /* Adjust the position */
     z-index: 2;
+    transition: transform 0.6s ease;
 }
 
 #img-cont p{
@@ -257,6 +268,38 @@ video{
     font-weight: 500;
     color: #ffffff;
     z-index: 6;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#img-cont:hover p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#img-cont:hover #img1{
+    transform: rotate(-11deg) translate(-61px, -170px);
+    transition: transform 0.6s ease;
+}
+
+#img-cont:hover #img-space{
+    transform: rotate(-8deg) translate(-50px, -137px);
+    transition: transform 0.6s ease;
+}
+
+#img-cont:hover #img2{
+    transform: rotate(-4deg) translate(-49px, -120px);
+    transition: transform 0.6s ease;
+}
+
+#img-cont:hover #img3{
+    transform: rotate(5deg) translate(5px, 0px);
+    transition: transform 0.6s ease;
+}
+
+#img-cont:hover #img4{
+    transform: rotate(15deg) translate(100px, 80px);
+    transition: transform 0.6s ease;
 }
 
 #footer{
@@ -390,4 +433,49 @@ video{
 #bottom-right-text:hover #arrow-down-cont svg{
     stroke:rgb(244, 240, 235);
     transition: stroke 0.3s ease;
+}
+
+#line1{
+    position: absolute;
+    bottom: 120px;
+    right: 480px;
+    width: 1px;
+    height: 110px;
+    background-color: #232323;
+}
+
+#line2{
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    width: 1px;
+    height: 25px;
+    background-color: #232323;
+}
+
+#line3{
+    position: absolute;
+    top: 36px;
+    left: 462px;
+    width: 1.5px;
+    height: 12px;
+    background-color: #232323;
+}
+
+#line4{
+    position: absolute;
+    top: 36px;
+    left: 660px;
+    width: 1.5px;
+    height: 12px;
+    background-color: #232323;
+}
+
+#line5{
+    position: absolute;
+    top: 36px;
+    left: 859px;
+    width: 1.5px;
+    height: 12px;
+    background-color: #232323;
 }
